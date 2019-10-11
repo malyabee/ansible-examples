@@ -1,0 +1,9 @@
+[prod]
+node01
+node02
+
+[one]
+node01
+
+[two]
+node02
