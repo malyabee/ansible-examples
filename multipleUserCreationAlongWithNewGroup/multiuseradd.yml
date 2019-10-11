@@ -1,0 +1,28 @@
+---
+- name: creating group and user
+  hosts: all
+  become: yes
+ 
+  tasks:
+    - name: create group
+      group:
+          name: dev
+          state: present
+    - name: creating user
+      user: 
+          name: "{{ item }}"
+          password: "$6$mysecretsalt$NGp7yjCh4eVwEPLHORKkwAzIFqMFfiCUth6TC76ADNMBuQx5aECMvmPGE7vFV8avPiQOncuTMBaL7Uf5XvIzf/"
+          groups: dev
+          state: present
+      with_items:
+        - mali
+        - latheef
+        - kishore
+      notify:
+        - restart sshd
+
+  handlers:
+    - name: restart sshd
+      service:
+         name: sshd 
+         state: restarted
