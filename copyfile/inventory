@@ -1,0 +1,7 @@
+#Sample inventory
+[nodes]
+node03.example.com
+node02.example.com
+
+[mynodes]
+node01.example.com
