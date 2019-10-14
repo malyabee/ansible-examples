@@ -15,9 +15,9 @@
           groups: dev
           state: present
       with_items:
-        - mali
-        - latheef
-        - kishore
+        - iamuser01
+        - iamuser02
+        - iamuser03
       notify:
         - restart sshd
 
