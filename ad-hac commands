@@ -1,0 +1,15 @@
+# Ansible ad-hac commands
+
+Using Ansible ad-hac commands we can executes commands on remote hosts without manual login.
+Ansible establishes an SSH connection with the remote host, executes the command, captures the output and returns it.
+
+Ref : https://docs.ansible.com/ansible/latest/user_guide/intro_adhoc.html
+
+Setup Ansible lab using  https://github.com/malyabee/vagrant_ansible_lab
+
+"Vagrant_ansible_lab" will provide a 4 node environment (1 management node + 3 targat nodes)
+
+
+### ad-hac command to display date
+
+ansible node01 -m command -a date
