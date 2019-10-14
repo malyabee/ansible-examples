@@ -10,7 +10,7 @@
           state: present
     - name: creating user
       user: 
-          name: user01
+          name: iasuser
           password: "$6$mysecretsalt$NGp7yjCh4eVwEPLHORKkwAzIFqMFfiCUth6TC76ADNMBuQx5aECMvmPGE7vFV8avPiQOncuTMBaL7Uf5XvIzf/"
           groups: dev
           state: present
