@@ -1,3 +1,4 @@
+# User creation with   vault example
 This ansible project used to demonstrate how to use ansible-vault to encrypt variable file which contains  user name and password.
 
 We used  "hello" as encrypted key for  ansible vault.
